@@ -4,42 +4,52 @@
 
 
 #empty lists
-name = []
-name2 = []
-school = []
-school2 = []
-course = []
-course2 = []
-score = [50,99,87,67]
-score2 = [55,99,97,87]
+names = []
+schools = []
+courses = []
+score1 = []
+score2 = []
+
 #add
-addname = name.append('Jack')
-addname2 = name2.append('Sal')
-addschool = school.append('West High')
-addschool2 = school2.append('East High')
-addcourse = course.append('history')
-addcourse2 = course2.append('math')
-addscore = score.append(50,99,87,67)
-addscore2 = score2.append(55,99,97,87)
+names.append('Thomson, Jack')
+names.append('Evans, Sal')
+schools.append('West High')
+schools.append('East High')
+courses.append('History')
+courses.append('Biology')
+
+#score 1
+score1.append(88)
+score1.append(90)
+score1.append(97)
+score1.append(30)
+#score 2
+score2.append(98)
+score2.append(8)
+score2.append(58)
+score2.append(100)
 #Math for score
-
-
-
+    #1 
+num_elements1 = len(score1)
+average_score1 = sum(score1) / num_elements1
+    #2 
+num_elements2 = len(score2)
+average_score2 = sum(score2) / num_elements2
 
 #Display
+    #1
 print(f'''
 Semester 1 Grade Report
 -------------
-Student: {addname}
-School: {addschool}
-Course:{addcourse}
-Average Score: 
+Student: {names[0]}
+School: {schools[0]}
+Course: {courses[0]}
+Average Score: {average_score1:.2f}
       ''')
-
-
+    #2
 print(f'''
-Student: {addname2}
-School: {addschool2}
-Course:{addcourse2}
-Average Score: 
+Student: {names[1]}
+School: {schools[1]}
+Course:{courses[1]}
+Average Score: {average_score2:.2f}
       ''')
