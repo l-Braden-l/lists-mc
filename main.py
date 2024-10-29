@@ -50,6 +50,6 @@ Average Score: {average_score1:.2f}
 print(f'''
 Student: {names[1]}
 School: {schools[1]}
-Course:{courses[1]}
+Course: {courses[1]}
 Average Score: {average_score2:.2f}
       ''')
